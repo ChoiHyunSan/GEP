@@ -12,12 +12,12 @@ TagManager:
   - Water
   - UI
   - 
-  - Ground
   - Terrain
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - EnemyHit
+  - PlayerHit
+  - EnemyAttack
+  - PlayerAttack
   - 
   - 
   - 
