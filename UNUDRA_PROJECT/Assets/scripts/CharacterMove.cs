@@ -60,8 +60,8 @@ public class CharacterMove : MonoBehaviour {
 			//　목적지에 가까이 왔으면 도착.
 			if (arrived || distance < StoppingDistance)
 			{
-				arrived = true;
-			}
+                arrived = true;
+            }
 			
 			// 이동 속도를 구한다.
 			if (arrived)
@@ -102,8 +102,8 @@ public class CharacterMove : MonoBehaviour {
 		// CharacterController를 사용해서 움직인다.
 		characterController.Move(velocity * Time.deltaTime+snapGround);
 
-        if (characterController.velocity.magnitude < 0.1f)
-            arrived = true;
+        //if (characterController.velocity.magnitude < 0.1f)
+        //    arrived = true;
 
         // 강제로 방향 변경을 해제한다.
         if (forceRotate && Vector3.Dot(transform.forward,forceRotateDirection) > 0.99f)
